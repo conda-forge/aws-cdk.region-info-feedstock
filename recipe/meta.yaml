@@ -21,9 +21,8 @@ requirements:
     - wheel >=0.40,<1.dev0
     - pip
   run:
-    - jsii >=1.85.0,<2.0.0
     - python >=3.7
-    - python-jsii >=1.86.0,<2.0.0
+    - python-jsii >=1.85.0,<2.0.0
     - publication >=0.0.3
     - typeguard >=2.13.3,<2.14.dev0
 

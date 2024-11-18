@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws_cdk_region_info-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/aws_cdk_region_info-{{ version }}.tar.gz
   sha256: 18ed2aa5cd8354818f2196504184b2334da53805c9d314273a72ffdf125078cd
 
 build:

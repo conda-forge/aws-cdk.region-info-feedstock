@@ -1,3 +1,4 @@
+{% set python_min = "3.8" %}
 {% set name = "aws-cdk.region-info" %}
 {% set version = "2.167.1" %}
 
@@ -11,17 +12,17 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools >=67.3.2,<67.4.dev0
     - wheel >=0.40,<1.dev0
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - python-jsii >=1.104.0,<2.0.0
     - publication >=0.0.3
     - typeguard >=2.13.3,<4.3.0
@@ -33,6 +34,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:

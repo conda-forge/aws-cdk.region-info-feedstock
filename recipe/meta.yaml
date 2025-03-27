@@ -1,5 +1,5 @@
 {% set name = "aws-cdk.region-info" %}
-{% set version = "2.185.0" %}
+{% set version = "2.186.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/aws_cdk_region_info-{{ version }}.tar.gz
-  sha256: 50f45a479ed57b355e7d67e9ea13d11eec501c54705fc138330a0f18e3e3714c
+  sha256: b7fb6a5b9b7d5ce3f897b2d49b889e7b431a0e20f8c9d83972ea1c8a0a124772
 
 build:
   noarch: python
